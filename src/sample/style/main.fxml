@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="549.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.mainController">
+    <children>
+      <ImageView fitHeight="557.0" fitWidth="747.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../image/cart.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0117076b" height="554.0" stroke="BLACK" strokeType="INSIDE" width="747.0" />
+        <Label layoutX="200.0" layoutY="53.0" text="POS SYSTEM" textFill="#f2f2f2" underline="true">
+            <font>
+                <Font name="DejaVu Serif Bold" size="46.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="order" fitHeight="118.0" fitWidth="111.0" layoutX="403.0" layoutY="202.0" onMouseClicked="#nagative" onMouseEntered="#playEntranceAnimation" onMouseExited="#playExitAnimation" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asserts/clean.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="customers" fitHeight="142.0" fitWidth="118.0" layoutX="59.0" layoutY="197.0" onMouseClicked="#nagative" onMouseEntered="#playEntranceAnimation" onMouseExited="#playExitAnimation" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asserts/settings.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="searchOrder" fitHeight="137.0" fitWidth="118.0" layoutX="563.0" layoutY="198.0" onMouseClicked="#nagative" onMouseEntered="#playEntranceAnimation" onMouseExited="#playExitAnimation" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asserts/report.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="item" fitHeight="118.0" fitWidth="138.0" layoutX="227.0" layoutY="197.0" onMouseClicked="#nagative" onMouseEntered="#playEntranceAnimation" onMouseExited="#playExitAnimation" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../asserts/store.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="lblmanu" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="158.0" layoutY="375.0" prefHeight="49.0" prefWidth="426.0" text="WELCOME" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="KacstOne Bold" size="30.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="NW_RESIZE" />
+         </cursor>
+        </Label>
+        <Label fx:id="lbldescription" alignment="CENTER" layoutX="82.0" layoutY="424.0" prefHeight="28.0" prefWidth="585.0" text="Plese selecct one of aboue main operations to preceed" textAlignment="CENTER" textFill="#fcf307" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="DejaVu Serif Condensed Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="282.0" layoutY="513.0" text="copyright by 2019 IJSE DEP" textFill="WHITE" />
+    </children>
+</AnchorPane>
